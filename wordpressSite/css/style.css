@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo {
+    min-height: 802px;
+    background: url(../img/bg/main_bg.jpg) center center/cover no-repeat;
+    padding: 38px 0 61px 0;
+}
+
+.logo .logo__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo__text {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h1 {
+    margin-top: 53px;
+}
+
+.promo .promo__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41px;
+    text-transform: uppercase;
+    color: #F9BF3B;
+    text-align: center;
+}
+
+.promo .promo__simple .promo__title__big {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 21px;
+}
+
+h2.promo__title {
+    margin-top: 21px;
+}
+
+.promo .promo__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.promo .promo__text span {
+    font-weight: bold;
+    color: #F9BF3B;
+    text-transform: uppercase;
+}
+
+.promo .button__blue,
+.gifts .button__blue {
+    margin: 0 auto;
+    margin-top: 72px;
+    font-family: RobotoCondensed;
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 25px 30px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.promo .promo__moreInfo {
+    margin-top: 71px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.promo .promo__img__down {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.wait {
+    min-height: 607px;
+    background: #EFEFEF;
+    padding: 85px 0 75px 0;
+}
+
+.wait .wait__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #252525;
+    text-align: center;
+}
+
+.wait .wait__line,
+.afterTraining .afterTraining__line {
+    margin: 0 auto;
+    margin-top: 18px;
+    width: 220px;
+    height: 7px;
+    background: #F9BF3B;
+}
+
+.wait .wait__descr {
+    margin-top: 19px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.wait .wait__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wait .wait__wrapper .wait__advantage {
+    max-width: 342px;
+}
+
+.wait__advantage .wait__img {
+    margin-top: 46px;
+}
+
+.wait__advantage .wait__img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.wait__advantage .wait__text {
+    margin-top: 26px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
+
+.optim {
+    padding: 108px 0 74px 0;
+    background: url(../img/bg/woman_bg.jpg) bottom left 150px no-repeat;
+}
+
+.optim .optim__title {
+    max-width: 750px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #299CBD;
+    margin-left: auto;
+}
+
+.optim .optim__text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    align-items: center;
+    max-width: 750px;
+    color: #4A4A4A;
+    margin: 14px 0 0 auto;
+}
+
+.optim .optim__text span {
+    font-weight: bold;
+}
+
+.afterTraining {
+    min-height: 447px;
+    background: url(../img/bg/second_bg.jpg) center center/cover no-repeat;
+    padding: 86px 0 68px;
+}
+
+.afterTraining .afterTraining__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EFEFEF;
+}
+
+.afterTraining .afterTraining__wrapper {
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.afterTraining .afterTraining__wrapper .afterTraining__item {
+    max-width: 196px;
+}
+
+.afterTraining__item .afterTraining__item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 118px;
+    width: 118px;
+    border-radius: 50%;
+    background: #B4E2FF;
+    margin: 0 auto;
+}
+
+.afterTraining__item .afterTraining__item-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #EFEFEF;
+    margin-top: 25px;
+}
+
+.gifts {
+    min-height: 631px;
+    padding: 88px 0;
+    background: #EFEFEF;
+}
+
+.gifts .gifts__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gifts .gifts__title {
+    margin-top: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #252525;
+}
+
+.live {
+    padding: 89px 0 52px 0;
+}
+
+.live .live__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.live .live__title {
+    margin-top: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.live .live__title-blue {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+
+.live .live__text {
+    margin-top: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.footer {
+    min-height: 169px;
+    background: #1A1A1A;
+    padding: 57px 0 69px 0;
+}
+
+.footer .footer__links {
+    text-align: center;
+}
+
+.footer .footer__links .footer__links-help,
+.footer .footer__links .footer__links-confidentiality,
+.footer .footer__call {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    color: #888888;
+}
+
+.footer__links-delimiter {
+    display: inline;
+    color: #888888;
+}
+
+.footer .footer__call {
+    margin-top: 5px;
+}
