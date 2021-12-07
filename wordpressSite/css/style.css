@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto";
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -23,7 +27,6 @@
 .logo .logo__text {
     text-align: center;
     margin-top: 10px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -37,7 +40,6 @@ h1 {
 }
 
 .promo .promo__title {
-    font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 41px;
@@ -47,7 +49,6 @@ h1 {
 }
 
 .promo .promo__simple .promo__title__big {
-    font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 80px;
@@ -62,7 +63,6 @@ h2.promo__title {
 }
 
 .promo .promo__text {
-    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 21px;
@@ -82,7 +82,6 @@ h2.promo__title {
 .gifts .button__blue {
     margin: 0 auto;
     margin-top: 72px;
-    font-family: RobotoCondensed;
     font-size: 21px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -97,7 +96,7 @@ h2.promo__title {
 
 .promo .promo__moreInfo {
     margin-top: 71px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 200;
     font-size: 15px;
@@ -120,7 +119,7 @@ h2.promo__title {
 }
 
 .wait .wait__title {
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -140,7 +139,7 @@ h2.promo__title {
 
 .wait .wait__descr {
     margin-top: 19px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -170,7 +169,7 @@ h2.promo__title {
 .wait__advantage .wait__text {
     margin-top: 26px;
     text-align: center;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -185,7 +184,7 @@ h2.promo__title {
 
 .optim .optim__title {
     max-width: 750px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 900;
     font-size: 28px;
@@ -195,7 +194,7 @@ h2.promo__title {
 }
 
 .optim .optim__text {
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
@@ -217,7 +216,7 @@ h2.promo__title {
 }
 
 .afterTraining .afterTraining__title {
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -248,7 +247,7 @@ h2.promo__title {
 }
 
 .afterTraining__item .afterTraining__item-text {
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
@@ -271,7 +270,7 @@ h2.promo__title {
 
 .gifts .gifts__title {
     margin-top: 45px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -291,7 +290,7 @@ h2.promo__title {
 
 .live .live__title {
     margin-top: 36px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
@@ -302,7 +301,7 @@ h2.promo__title {
 
 .live .live__title-blue {
     margin-top: 30px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -313,7 +312,7 @@ h2.promo__title {
 
 .live .live__text {
     margin-top: 25px;
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: normal;
     font-size: 23px;
@@ -334,7 +333,7 @@ h2.promo__title {
 .footer .footer__links .footer__links-help,
 .footer .footer__links .footer__links-confidentiality,
 .footer .footer__call {
-    font-family: Roboto;
+
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
