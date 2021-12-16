@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UBER Drivers</title>
-
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -21,16 +21,16 @@
             <div class="container">
                 <ul class="header__menu">
                     <li class="header__menu-element">
-                        <a href="#">Главная</a>
+                        <a href="#home">Главная</a>
                     </li>
                     <li class="header__menu-element">
-                        <a href="#">Со своим автомобилем</a>
+                        <a href="#conditionsId">Со своим автомобилем</a>
                     </li>
                     <li class="header__menu-element">
-                        <a href="#">На автомобиле компании</a>
+                        <a href="#conditionsId">На автомобиле компании</a>
                     </li>
                     <li class="header__menu-element">
-                        <a href="#">Требования</a>
+                        <a href="#conditionsId">Требования</a>
                     </li>
                     <li class="header__menu-element">
                         <a href="#">Контакты</a>
@@ -39,27 +39,35 @@
                         <a href="#">Оставить заявку</a>
                     </li>
                 </ul>
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </nav>
 
-        <div class="header__info">
+        <div class="header__info" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="header__logo offset-1 col-3">
+                    <div class="header__logo offset-xl-1 col-6 col-sm-5 col-md-4 col-lg-3">
                         <img src="img/logo.png" alt="logo" class="header__logo-img">
                         <div class="header__logo-text">Официальный партнер Uber в Москве</div>
                     </div>
 
-                    <div class="header__phone offset-3 col-2">
+                    <div class="header__phone offset-md-2 offset-lg-4 offset-xl-3 col-6 col-sm-3 col-md-3 col-lg-2">
                         <div class="header__phone-text">
                             Звоните нам ежедневно
                         </div>
                         <a href="tel:+74957970988" class="header__phone-link">
                             8 495 797 09 88
                         </a>
+                        <button class="header__callUs header__callUs-phone">
+                            заказать звонок
+                        </button>
                     </div>
 
-                    <button class="header__callUs col-2">
+                    <button class="header__callUs col-2 col-sm-4 col-md-3 col-xl-2">
                         заказать звонок
                     </button>
                 </div>
@@ -89,7 +97,7 @@
             <div class="title">преимущества</div>
             <div class="header">8 причин начать работать с нами</div>
             <div class="row">
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img">
                         <img src="icons/working__icon__1.png" alt="icon__1">
                     </div>
@@ -101,7 +109,7 @@
                             искать мелкие деньги для размена.</div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img">
                         <img src="icons/working__icon__2.png" alt="icon__2">
                     </div>
@@ -112,7 +120,7 @@
                             водители зарабатывают больше!</div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img ">
                         <img src="icons/working__icon__3.png" alt="icon__3">
                     </div>
@@ -124,7 +132,7 @@
                             бухгалтерские услуги и ведение банковского счета.</div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img ">
                         <img src="icons/working__icon__4.png" alt="icon__4">
                     </div>
@@ -136,7 +144,7 @@
                             вечером, в выходные или праздничные дни! </div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img ">
                         <img src="icons/working__icon__5.png" alt="icon__5">
                     </div>
@@ -148,7 +156,7 @@
                             для подключения, через 1-2 дня Вы можете начинать работать!</div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img ">
                         <img src="icons/working__icon__6.png" alt="icon__6">
                     </div>
@@ -159,7 +167,7 @@
                             пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.</div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img ">
                         <img src="icons/working__icon__7.png" alt="icon__7">
                     </div>
@@ -170,7 +178,7 @@
                             консультацию.</div>
                     </div>
                 </div>
-                <div class="benefits__card col-6">
+                <div class="benefits__card col-12 col-sm-6">
                     <div class="benefits__card-img ">
                         <img src="icons/working__icon__8.png" alt="icon__8">
                     </div>
@@ -191,7 +199,7 @@
             <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный
                 телефон</div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="app__card app__card__1">
                         <div class="app__card-title">оформление заказа одним касанием</div>
                         <div class="app__card-plus">
@@ -199,7 +207,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="app__card app__card__2">
                         <div class="app__card-title">надежная подача</div>
                         <div class="app__card-plus">
@@ -207,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="app__card app__card__3">
                         <div class="app__card-title">прозрачные цены</div>
                         <div class="app__card-plus">
@@ -215,7 +223,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="app__card app__card__4">
                         <div class="app__card-title">безналичная оплата</div>
                         <div class="app__card-plus">
@@ -223,7 +231,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="app__card app__card__5">
                         <div class="app__card-title">обратная связь</div>
                         <div class="app__card-plus">
@@ -231,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="app__card app__card__6">
                         <div class="app__card-title">разделить<br>стоимость поездки</div>
                         <div class="app__card-plus">
@@ -255,13 +263,13 @@
         </div>
     </section>
 
-    <section class="conditions">
+    <section class="conditions" id="conditionsId">
         <div class="container">
             <div class="title">Возможности</div>
             <div class="header">условия и требования</div>
 
             <div class="row">
-                <div class="col-6 conditions__card">
+                <div class="col-12 col-sm-6 conditions__card">
                     <div class="conditions__title">
                         УСЛОВИЯ: со своим авто:
                     </div>
@@ -276,7 +284,7 @@
                     </ul>
                     <div class="conditions__subtitle">В день заработок составляет 7000-12000р + бонус 3000т рублей</div>
                 </div>
-                <div class="col-6 conditions__card">
+                <div class="col-12 col-sm-6 conditions__card">
                     <div class="conditions__title">
                         УСЛОВИЯ: на авто компании:
                     </div>
@@ -286,7 +294,7 @@
                         <li>Среда пятница и суббота работа на компанию остальные дни вы работаете на себя</li>
                     </ul>
                 </div>
-                <div class="col-6 conditions__card conditions__card-bottom">
+                <div class="col-12 col-sm-6 conditions__card conditions__card-bottom">
                     <div class="conditions__title">
                         ТРЕБОВАНИЕ:
                     </div>
@@ -298,7 +306,7 @@
                         <li>Дивайс на системе андроид 4.0и выше(самсунг)</li>
                     </ul>
                 </div>
-                <div class="col-6 conditions__card conditions__card-bottom">
+                <div class="col-12 col-sm-6 conditions__card conditions__card-bottom">
                     <div class="conditions__title">
                         ДОКУМЕНТЫ:
                     </div>
@@ -324,6 +332,59 @@
             <a href="#" class="cities__link">посмотреть все города</a>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="footer__line"> </div>
+        <div class="footer__social footer__social-desktop">
+            <div class="footer__social-icon">
+                <span class="icon-facebook"></span>
+            </div>
+            <div class="footer__social-icon">
+                <span class="icon-twitter"></span>
+            </div>
+            <div class="footer__social-icon">
+                <span class="icon-linkedin"></span>
+            </div>
+            <div class="footer__social-icon">
+                <span class="icon-instagram"></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__links">
+                    <a href="#" class="footer__link-1">на главную</a>
+                    <a href="#" class="footer__link-1">города</a>
+                    <a href="#" class="footer__link-1">для водителей</a>
+                </div>
+                <div class="footer__links footer__links-2">
+                    <a href="#" class="footer__link-2">центр поддержки</a>
+                    <a href="#" class="footer__link-2">вакансии</a>
+                    <a href="#" class="footer__link-2 footer__links-desktop">разработчики</a>
+                    <a href="#" class="footer__link-2 footer__links-desktop">блог</a>
+                    <a href="#" class="footer__link-2 footer__links-desktop">о нас</a>
+                </div>
+                <div class="footer__links footer__link-phone footer__links-2">
+                    <a href="#" class="footer__link-2">разработчики</a>
+                    <a href="#" class="footer__link-2">блог</a>
+                    <a href="#" class="footer__link-2">о нас</a>
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__link-3">
+                        русский
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__apps">
+            <img src="icons/app__icons.png" alt="apps">
+        </div>
+
+        <div class="footer__underline"></div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

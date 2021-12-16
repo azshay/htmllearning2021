@@ -1,304 +1,300 @@
-body
-    font-family: "Roboto", sans-serif
+@import url(../css/font.css)
+@import "general"
+@import "adaptive"
 
-header
-    position: relative
-    padding-top: 50px
-    .header__nav
-        height: 50px
-        background-color: #212121
-        position: fixed
-        top: 0
-        width: 100%
-        z-index: 1
-    nav .header__menu
-        display: flex
-        justify-content: space-around
-        padding: 10px 0 10px 0
-
-    .header__info
-        min-height: 84px
-        background-color: rgba(0, 0, 0, 0.6)
-        padding: 19px 0 19px 0
-        position: absolute
-        width: 100%
-        .header__logo img
-            width: 100%
-        .header__logo-text
-            opacity: 0.5
-            color: #ffffff
-            font-size: 13px
-            font-weight: 100
-
-.header__menu .header__menu-element
-    list-style-type: none
-    &:not(:last-child)
-        padding-right: 37px
-        border-right: 1px dotted #000
-    a
-        color: #ffffff
-        font-family: Roboto
-        font-size: 15px
-        font-weight: 300
-        text-decoration: none
-
-.header__phone
-    .header__phone-text
-        color: #ffffff
-        font-size: 12px
-        font-weight: 300
-        text-align: right
-        margin-top: 5px
-
-    .header__phone-link
-        color: #ffffff
-        display: block
-        font-size: 22px
-        font-weight: 400
-        text-align: right
-        text-decoration: none
-
-.header__callUs
-    padding: 18px 20px
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
-    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-    color: #ffffff
-    font-size: 14px
-    font-weight: 400
-    text-transform: uppercase
-    border-radius: 4px
-    border: none
-
-.promo
-    background: url(../img/bg/main__bg.jpg) center (center / cover) no-repeat
-    min-height: 800px
-    padding-top: 151px
-    padding-bottom: 135px
-    .promo__button
-        padding: 18px 20px
-        box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
-        background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-        color: #ffffff
-        font-size: 14px
-        font-weight: 400
-        text-transform: uppercase
-        border-radius: 4px
-        border: none
-    h1
-        font-size: 60px
-        font-weight: 900
-        text-align: center
-        color: #ffffff
-        text-transform: uppercase
-
-    .promo__header
-        font-weight: 700
-        font-size: 36px
-        color: #ffffff
-        text-align: center
-        text-transform: uppercase
-
-    .promo__text
-        color: #ffffff
-        font-size: 18px
-        font-weight: 400
-        text-align: center
-        margin-top: 23px
-
-    .promo__button
-        margin: 0 auto
-        display: block
-        margin-top: 135px
-        font-size: 18px
-        padding: 20px 39px
-
-.title
-    width: 112px
-    height: 24px
-    background-color: #000000
-    color: #ffffff
-    font-size: 11px
-    font-weight: 100
-    text-align: center
-    text-transform: uppercase
-    padding-top: 5px
-    margin: 0 auto
-
-.header
-    color: #222222
-    font-size: 38px
-    font-weight: 700
-    text-align: center
-    text-transform: uppercase
-    margin-top: 38px
-
-.subtitle
-    color: #222222
-    font-size: 17px
-    font-weight: 400
-    text-align: center
-
-.benefits
-    padding: 71px 0 65px 0
-
-    .benefits__card
-        display: flex
-        margin-top: 40px
-        justify-content: center
-        align-items: center
-
-        .benefits__card-img
-            width: 113px
-            height: 113px
-            background-color: #1eacc7
-            border-radius: 100px
-            display: flex
-            align-items: center
-            justify-content: center
-
-        .benefits__card-info
-            max-width: 341px
-            padding-left: 26px
-
-        .benefits__card-subtitle
-            color: #1eacc7
-            font-size: 17px
-            font-weight: 400
-
-        .benefits__card-text
-            font-weight: 300
-            color: #202020
-            font-size: 15px
-            font-weight: 300
-
-.app
-    padding: 71px 0 80px 0
-    background: url(../img/bg/app__bg.jpg) center center/cover no-repeat
-    min-height: 864px
-    .row
-        margin-top: 32px
-    &__card
-        height: 280px
-        width: 320px
-        margin: 0 auto
-        padding-top: 91px
-        margin-bottom: 19px
-        position: relative
-        &__1
-            background: url(../img/choice__img__1.jpg)
-        &__2
-            background: url(../img/choice__img__2.jpg)
-        &__3
-            background: url(../img/choice__img__3.jpg)
-        &__4
-            background: url(../img/choice__img__4.jpg)
-        &__5
-            background: url(../img/choice__img__5.jpg)
-        &__6
-            background: url(../img/choice__img__6.jpg)
-        &-title
-            color: #ffffff
-            font-size: 24px
-            font-weight: 400
-            text-align: center
-            text-transform: uppercase
+@media (min-width:992px) and (max-width: 1199px)
+    header
+        .header
+            &__menu-element
+                &:not(:last-child)
+                    padding-right: 25px
+            &__logo
+                padding-top: 5px
+                &-text
+                    font-size: 12px
+            &__phone-link
+                font-size: 18px
+    .app__card
+        width: 300px
+        height: 275px
         &-plus
-            width: 26px
-            height: 26px
-            background-color: #000000
-            display: flex
-            justify-content: center
-            align-items: center
-            border-radius: 100%
-            position: absolute
-            bottom: 35px
-            left: 147px
-            cursor: pointer
+            left: 135px
+    .footer__apps img
+        width: 225px
 
-.choice
-    background: url(../img/bg/choice__bg.jpg) center center/cover no-repeat
-    padding: 57px 0 138px 0
-    min-height: 896px
+@media (min-width: 768px) and (max-width: 991px)
+    header
+        .header
+            &__menu-element
+                &:not(:last-child)
+                    padding-right: 14px
+                a
+                    font-size: 12px
+            &__logo
+                padding-top: 5px
+                &-text
+                    font-size: 12px
+            &__phone-link
+                font-size: 18px
+
+    .promo
+        & h1
+            font-size: 50px
+
+    .benefits
+        &__card
+            flex-direction: column
+            justify-content: start
+            text-align: center
+            &-subtitle
+                margin-top: 20px
+            &-info
+                padding-left: 0
+    .app__card
+        width: 300px
+        height: 275px
+        &-plus
+            left: 135px
+
+    .choice__img
+        width: 100%
+
+    .footer__apps img
+        width: 150px
+
+@media (min-width: 576px) and (max-width: 767px)
+    header
+        .header
+            &__menu-element
+                &:not(:last-child)
+                    padding-right: 6px
+                a
+                    font-size: 10px
+            &__logo
+                padding-top: 5px
+                &-text
+                    font-size: 11px
+            &__phone
+                &-link
+                    font-size: 15px
+                &-text
+                    font-size: 9px
+            &__callUs
+                padding: 10px 20px
+    .promo
+        & h1
+            font-size: 35px
+        &__header
+            font-size: 30px
+
+    .benefits
+        &__card
+            flex-direction: column
+            justify-content: start
+            text-align: center
+            &-subtitle
+                margin-top: 20px
+            &-info
+                padding-left: 0
+    .app__card
+        width: 260px
+        height: 260px
+        padding-top: 70px
+        &-plus
+            left: 135px
+
+    .choice__img
+        width: 100%
+
+    .footer
+        &__apps img
+            width: 150px
+        &__social
+            top: 157px
+            transform: translateX(-50%)
+            left: 50%
+        &__apps
+            top: 200px
+            transform: translateX(50%)
+            right: 50%
+        &__underline
+            margin-top: 90px
+
+@media (max-width: 575px)
+    header
+        .header
+            &__menu
+                position: fixed
+                flex-direction: column
+                justify-content: start
+                text-align: center
+                background: #000
+                opacity: 0.8
+                left: -100%
+                top: 0
+                height: 100vh
+                width: 70vw
+                transition: all 1s
+                &-active
+                    left: 0
+                    transition: all 1s
+                &-element
+                    margin-top: 20px
+                    &:not(:last-child)
+                        border: none
+                        padding: 0
+            &__hamburger
+                margin-top: 20px
+                display: block
+                transition: all 1s
+            &__hamburger span
+                display: block
+                background-color: #fff
+                width: 15px
+                height: 2px
+                margin: 2px 0 0 auto
+                border-radius: 5px
+            &__info
+                height: 60px
+                padding: 9px
+            &__logo
+                padding-top: 20px
+                &-text
+                    display: none
+            &__phone
+                &-link
+                    font-size: 15px
+                &-text
+                    display: none
+            &__callUs
+                display: none
+                &-phone
+                    display: block
+                    margin: 9px 0 0 auto
+                    padding: 5px 10px
+            &__hamburger
+                display: block
+                & span
+                    transition: all 1s
+                &-active
+                    & span:nth-child(1)
+                        transform: rotate(45deg)
+                        transition: all 1s
+                    & span:nth-child(2)
+                        display: none
+                    & span:last-child
+                        transform: translateY(-4px) rotate(-45deg)
+                        transition: all 1s
+    .promo
+        & h1
+            font-size: 30px
+            padding: 0 70px
+        &__header
+            font-size: 20px
+            padding: 33px 50px 0 50px
+        &__text
+            display: none
+
     .header
-        margin-top: 32px
-    .header, .subtitle
-        color: #ffffff
-    .title
-        color: #000
-        background: white
-    &__img
-        display: block
-        margin: 0 auto
-        margin-top: 56px
-    &__text
-        color: #222222
-        font-size: 17px
-        font-weight: 300
-        text-align: center
-        margin-top: 4px
+        font-size: 16px
 
-.conditions
-    padding: 68px 0 84px 0
-    &__title
-        color: #1ca8c3
-        font-size: 22px
-        font-weight: 400
-        margin-top: 33px
-    &__subtitle
-        color: #1ca8c3
-        font-size: 17px
-        font-weight: 300
-    &__card
-        max-width: 478px
-        margin: 0 auto
-        &-bottom
-            margin-top: 62px
-            .conditions__title
-                color: #ff5656
-    &__list
-        color: #222222
-        font-size: 17px
-        font-weight: 300
-        list-style-type: none
-        padding-left: 50px
-        li
-            position: relative
-            margin-top: 10px
-        li:first-child
-            margin-top: 20px
-        li:before
-            content: ''
-            display: block
-            position: absolute
-            width: 21px
-            height: 20px
-            left: -31px
-            top: 3px
-            background: url(../icons/check__mark.png) center center/cover no-repeat
-        &-red
-            li:before
-                background: url(../icons/check__mark-red.png) center center/cover no-repeat
+    .subtitle
+        font-size: 14px
 
-.cities
-    padding: 49px 0
-    min-height: 717px
-    background: url(../img/bg/cities__bg.jpg) center center/cover no-repeat
-    .title
-        width: 76px
-        height: 24px
-        background-color: #ffffff
-        color: #070716
-    .header, .subtitle
-        color: #ffffff
+    .benefits
+        padding-top: 22px
+        &__card
+            flex-direction: column
+            justify-content: start
+            &-subtitle
+                margin-top: 20px
+            &-info
+                padding-left: 0
+    .app__card
+        width: 290px
+        height: 254px
+        padding-top: 70px
+        &-plus
+            left: 133px
 
-    &__link
-        display: block
-        color: #1fbad6
-        font-size: 15px
-        font-weight: 400
-        text-transform: uppercase
-        text-align: center
-        margin-top: 486px
-        text-decoration: none
-        &:hover
-            color: #1fbad6
+    .choice
+        background: url(../img/bg/choice__bg-phone.jpg)
+        padding-bottom: 40px
+        min-height: 0
+        & .header, & .subtitle
+            display: none
+        &__img
+            width: 100%
+        &__text
+            color: #fff
+
+    .conditions
+        &__list
+            padding-left: 30px
+        &__card
+            &-bottom
+                margin-top: 0
+
+    .footer
+        &__link
+            &-1:not(:last-child)
+                margin-right: 17px
+            &-2:not(:last-child)
+                margin-right: 0px
+        &__links
+            &-2
+                justify-content: space-between
+            &-desktop
+                display: none
+        &__apps img
+            width: 150px
+        &__social
+            top: 180px
+            transform: translateX(-50%)
+            left: 50%
+        &__apps
+            top: 220px
+            transform: translateX(50%)
+            right: 50%
+        &__underline
+            margin-top: 120px
+
+@media (max-width: 320px)
+    header
+        .header
+            &__callUs
+                display: none
+                &-phone
+                    display: block
+                    margin: 9px 0 0 auto
+                    font-size: 10px
+            &__menu
+                transition: all 1s
+                &-active
+                    transition: all 1s
+                    left: 0
+            &__hamburger
+                display: block
+                & span
+                    transition: all 1s
+                &-active
+                    & span:nth-child(1)
+                        transform: rotate(45deg)
+                        transition: all 1s
+                    & span:nth-child(2)
+                        display: none
+                    & span:last-child
+                        transform: translateY(-4px) rotate(-45deg)
+                        transition: all 1s
+
+    .footer
+        &__social
+            top: 210px
+            transform: translateX(-50%)
+            left: 50%
+        &__apps
+            top: 250px
+            transform: translateX(50%)
+            right: 50%
+        &__underline
+            margin-top: 120px
