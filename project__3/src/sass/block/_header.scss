@@ -36,11 +36,49 @@
             font-size: 18px;
             font-weight: 700;
             text-decoration: none;
-            margin-bottom: 8px;
+            line-height: 28px;
 
             &:hover {
                 color: #ffffff;
                 text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        &__official {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        &__official {
+            display: none;
+        }
+
+        &__logo {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        &__official {
+            display: none;
+        }
+
+        &__logo {
+            width: 50%;
+        }
+
+        &__contacts {
+            a {
+                font-size: 16px;
             }
         }
     }

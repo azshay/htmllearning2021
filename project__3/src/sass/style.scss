@@ -4,13 +4,27 @@
 
 * {
     font-family: 'MuseoSansCyrl', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 940px;
-    margin: 0 auto;
+    padding-left: calc(50% - 470px);
+    padding-right: calc(50% - 470px);
+}
+
+@media (max-width: 955px) {
+    .container {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
 }
 
 @import "block/promo";
 @import "block/header";
 @import "block/button";
+@import "block/benefits";
+@import "block/consultation";
+@import "block/forms";
+@import "block/titles";
+@import "block/carousel";
+@import "block/catalog";

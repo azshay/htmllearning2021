@@ -1,0 +1,26 @@
+.consultation {
+    background: url(../img/bg/consultation__bg.jpg) center center/cover no-repeat;
+    padding: 100px 0 92px 0;
+
+    &__descr {
+        margin-top: 80px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
+        max-width: 396px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 575px) {
+    .consultation {
+        &__descr {
+            font-size: 17px;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 80px;
+            margin-bottom: 36px;
+        }
+    }
+}

@@ -7,5 +7,28 @@
     text-align: center;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
     padding: 10px 20px;
+
+    &_main {
+        margin-top: 67px;
+        font-size: 16px;
+        padding: 18px 43px;
+    }
+
+    &_submit {
+        font-size: 16px;
+        padding: 20px 40px;
+    }
+
+    &_mini {
+        padding: 13px 38px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .button_logo {
+        padding: 10px 10px;
+    }
 }
