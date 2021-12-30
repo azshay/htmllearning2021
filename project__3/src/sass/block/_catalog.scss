@@ -172,3 +172,47 @@
         display: flex;
     }
 }
+
+@media (max-width: 907px) {
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+
+        &__tabs {
+            max-width: 80%;
+            padding: 0;
+            margin: 0 auto;
+            margin-top: 70px;
+        }
+
+        &__tab {
+            width: 33%;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .catalog {
+        &__tab {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .catalog {
+        &__tab {
+            font-size: 8px;
+        }
+    }
+}
