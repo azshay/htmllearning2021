@@ -2,6 +2,16 @@
     background: url(../img/bg/consultation__bg.jpg) center center/cover no-repeat;
     padding: 100px 0 92px 0;
 
+    input.error {
+        border: 1px solid $main__color;
+    }
+
+    label {
+        margin-bottom: 15px;
+        color: rgb(201, 125, 125);
+        text-align: center;
+    }
+
     &__descr {
         margin-top: 80px;
         color: #ffffff;
