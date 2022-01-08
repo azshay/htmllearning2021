@@ -1,0 +1,18 @@
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    &_orange-circle {
+        margin-left: 10px;
+        position: relative;
+        z-index: 1;
+        @include orange-circle;
+    }
+
+
+    &_fz48 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+}

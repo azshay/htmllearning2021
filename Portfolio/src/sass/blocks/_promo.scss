@@ -1,0 +1,18 @@
+.promo {
+    min-height: 100vh;
+    background: #BFE8FC;
+    padding: 206px 0 362px 0;
+
+    &__header {
+        margin-top: 9px;
+        max-width: 535px;
+    }
+
+    &__btns {
+        margin-top: 45px;
+
+        :nth-child(1) {
+            margin-right: 44px;
+        }
+    }
+}

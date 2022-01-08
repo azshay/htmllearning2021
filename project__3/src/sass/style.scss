@@ -1,6 +1,10 @@
+@import "libs/slick.scss";
+@import "libs/animate.min.scss";
+
 @import "base/variables";
 @import "base/fonts";
 @import "base/normalize";
+@import "base/animations";
 
 * {
     font-family: 'MuseoSansCyrl', sans-serif;
