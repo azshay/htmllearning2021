@@ -1,3 +1,10 @@
 .side-panel {
     display: flex;
+
+    &__icon {
+        text-decoration: none;
+        color: #000;
+
+        &:active {}
+    }
 }
