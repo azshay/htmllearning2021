@@ -3,16 +3,28 @@
 @import 'base/fonts';
 @import 'base/mixins';
 
-@import 'blocks/title';
-@import 'blocks/btns';
-@import 'blocks/promo';
-
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     padding-left: calc(50% - 570px);
     padding-right: calc(50% - 570px);
 }
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main_color;
+    margin-top: 25px;
+    margin: 0 auto;
+}
+
+@import 'blocks/title';
+@import 'blocks/btns';
+@import 'blocks/promo';
+@import 'blocks/side-panel';
+@import 'blocks/about';
+@import 'blocks/experience';
+@import 'blocks/skills';

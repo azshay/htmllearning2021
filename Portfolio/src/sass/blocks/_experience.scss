@@ -1,0 +1,112 @@
+.experience {
+    padding-bottom: 125px;
+
+    &__circle {
+        text-align: center;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        margin: 60px 0 0 65px;
+        grid-template-columns: 425px 425px;
+        column-gap: 135px;
+    }
+
+    &__column {
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: calc(100% + 17px);
+                    background: #000;
+                    top: -17px;
+                    left: -25px;
+                }
+            }
+        }
+    }
+
+    &__name {
+        padding-left: 50px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: $main_color;
+            left: 0;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+
+    &__item {
+        position: relative;
+        padding: 35px 0 0 20px;
+
+        &:before {
+            content: '';
+            width: 45px;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            left: -25px;
+            top: 52px;
+        }
+
+        &-name {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-body {
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+
+        &-head {
+            position: relative;
+            margin-left: 56px;
+        }
+
+        &-icon {
+            position: absolute;
+            left: -39px;
+            top: 7px;
+
+            img {
+                max-width: 25px;
+            }
+
+            @include orange-circle;
+
+            &:before {
+                left: -17px;
+                bottom: 3px;
+            }
+        }
+    }
+}

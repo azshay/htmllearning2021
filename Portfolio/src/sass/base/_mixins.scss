@@ -1,4 +1,6 @@
 @mixin orange_circle {
+    margin-top: 6px;
+
     &:before {
         content: "";
         position: absolute;
@@ -8,6 +10,6 @@
         left: -10px;
         z-index: -1;
         border-radius: 100%;
-        bottom: -20%;
+        bottom: -25%;
     }
 }
