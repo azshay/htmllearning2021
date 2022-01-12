@@ -26,4 +26,18 @@
         font-size: 48px;
         line-height: 60px;
     }
+
+    &_center {
+        text-align: center;
+    }
+
+    &_center-circle {
+        text-align: center;
+        margin-left: 0;
+
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }

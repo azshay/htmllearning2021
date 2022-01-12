@@ -2,6 +2,7 @@
 @import 'base/variables';
 @import 'base/fonts';
 @import 'base/mixins';
+@import 'base/animate';
 
 * {
     box-sizing: border-box;
@@ -28,3 +29,5 @@
 @import 'blocks/about';
 @import 'blocks/experience';
 @import 'blocks/skills';
+@import 'blocks/works';
+@import "blocks/price";

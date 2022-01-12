@@ -1,0 +1,43 @@
+.works {
+    padding-bottom: 60px;
+
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        gap: 5px;
+        grid-template: 280px / repeat(4, 280px);
+        grid-auto-rows: 280px;
+    }
+
+    &__item {
+        position: relative;
+
+        img {
+            transition: all 1s;
+            width: 100%;
+        }
+
+        &:hover {
+            img {
+                filter: blur(3px);
+            }
+
+            .works__text {
+                visibility: visible;
+                opacity: 100%;
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    }
+
+    &__text {
+        transition: all 1s;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $main-color;
+    }
+}

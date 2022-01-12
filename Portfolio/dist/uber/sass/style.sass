@@ -1,0 +1,300 @@
+@import url(../css/font.css)
+@import "general"
+@import "adaptive"
+
+@media (min-width:992px) and (max-width: 1199px)
+    header
+        .header
+            &__menu-element
+                &:not(:last-child)
+                    padding-right: 25px
+            &__logo
+                padding-top: 5px
+                &-text
+                    font-size: 12px
+            &__phone-link
+                font-size: 18px
+    .app__card
+        width: 300px
+        height: 275px
+        &-plus
+            left: 135px
+    .footer__apps img
+        width: 225px
+
+@media (min-width: 768px) and (max-width: 991px)
+    header
+        .header
+            &__menu-element
+                &:not(:last-child)
+                    padding-right: 14px
+                a
+                    font-size: 12px
+            &__logo
+                padding-top: 5px
+                &-text
+                    font-size: 12px
+            &__phone-link
+                font-size: 18px
+
+    .promo
+        & h1
+            font-size: 50px
+
+    .benefits
+        &__card
+            flex-direction: column
+            justify-content: start
+            text-align: center
+            &-subtitle
+                margin-top: 20px
+            &-info
+                padding-left: 0
+    .app__card
+        width: 300px
+        height: 275px
+        &-plus
+            left: 135px
+
+    .choice__img
+        width: 100%
+
+    .footer__apps img
+        width: 150px
+
+@media (min-width: 576px) and (max-width: 767px)
+    header
+        .header
+            &__menu-element
+                &:not(:last-child)
+                    padding-right: 6px
+                a
+                    font-size: 10px
+            &__logo
+                padding-top: 5px
+                &-text
+                    font-size: 11px
+            &__phone
+                &-link
+                    font-size: 15px
+                &-text
+                    font-size: 9px
+            &__callUs
+                padding: 10px 20px
+    .promo
+        & h1
+            font-size: 35px
+        &__header
+            font-size: 30px
+
+    .benefits
+        &__card
+            flex-direction: column
+            justify-content: start
+            text-align: center
+            &-subtitle
+                margin-top: 20px
+            &-info
+                padding-left: 0
+    .app__card
+        width: 260px
+        height: 260px
+        padding-top: 70px
+        &-plus
+            left: 135px
+
+    .choice__img
+        width: 100%
+
+    .footer
+        &__apps img
+            width: 150px
+        &__social
+            top: 157px
+            transform: translateX(-50%)
+            left: 50%
+        &__apps
+            top: 200px
+            transform: translateX(50%)
+            right: 50%
+        &__underline
+            margin-top: 90px
+
+@media (max-width: 575px)
+    header
+        .header
+            &__menu
+                position: fixed
+                flex-direction: column
+                justify-content: start
+                text-align: center
+                background: #000
+                opacity: 0.8
+                left: -100%
+                top: 0
+                height: 100vh
+                width: 70vw
+                transition: all 1s
+                &-active
+                    left: 0
+                    transition: all 1s
+                &-element
+                    margin-top: 20px
+                    &:not(:last-child)
+                        border: none
+                        padding: 0
+            &__hamburger
+                margin-top: 20px
+                display: block
+                transition: all 1s
+            &__hamburger span
+                display: block
+                background-color: #fff
+                width: 15px
+                height: 2px
+                margin: 2px 0 0 auto
+                border-radius: 5px
+            &__info
+                height: 60px
+                padding: 9px
+            &__logo
+                padding-top: 20px
+                &-text
+                    display: none
+            &__phone
+                &-link
+                    font-size: 15px
+                &-text
+                    display: none
+            &__callUs
+                display: none
+                &-phone
+                    display: block
+                    margin: 9px 0 0 auto
+                    padding: 5px 10px
+            &__hamburger
+                display: block
+                & span
+                    transition: all 1s
+                &-active
+                    & span:nth-child(1)
+                        transform: rotate(45deg)
+                        transition: all 1s
+                    & span:nth-child(2)
+                        display: none
+                    & span:last-child
+                        transform: translateY(-4px) rotate(-45deg)
+                        transition: all 1s
+    .promo
+        & h1
+            font-size: 30px
+            padding: 0 70px
+        &__header
+            font-size: 20px
+            padding: 33px 50px 0 50px
+        &__text
+            display: none
+
+    .header
+        font-size: 16px
+
+    .subtitle
+        font-size: 14px
+
+    .benefits
+        padding-top: 22px
+        &__card
+            flex-direction: column
+            justify-content: start
+            &-subtitle
+                margin-top: 20px
+            &-info
+                padding-left: 0
+    .app__card
+        width: 290px
+        height: 254px
+        padding-top: 70px
+        &-plus
+            left: 133px
+
+    .choice
+        background: url(../img/bg/choice__bg-phone.jpg)
+        padding-bottom: 40px
+        min-height: 0
+        & .header, & .subtitle
+            display: none
+        &__img
+            width: 100%
+        &__text
+            color: #fff
+
+    .conditions
+        &__list
+            padding-left: 30px
+        &__card
+            &-bottom
+                margin-top: 0
+
+    .footer
+        &__link
+            &-1:not(:last-child)
+                margin-right: 17px
+            &-2:not(:last-child)
+                margin-right: 0px
+        &__links
+            &-2
+                justify-content: space-between
+            &-desktop
+                display: none
+        &__apps img
+            width: 150px
+        &__social
+            top: 180px
+            transform: translateX(-50%)
+            left: 50%
+        &__apps
+            top: 220px
+            transform: translateX(50%)
+            right: 50%
+        &__underline
+            margin-top: 120px
+
+@media (max-width: 320px)
+    header
+        .header
+            &__callUs
+                display: none
+                &-phone
+                    display: block
+                    margin: 9px 0 0 auto
+                    font-size: 10px
+            &__menu
+                transition: all 1s
+                &-active
+                    transition: all 1s
+                    left: 0
+            &__hamburger
+                display: block
+                & span
+                    transition: all 1s
+                &-active
+                    & span:nth-child(1)
+                        transform: rotate(45deg)
+                        transition: all 1s
+                    & span:nth-child(2)
+                        display: none
+                    & span:last-child
+                        transform: translateY(-4px) rotate(-45deg)
+                        transition: all 1s
+
+    .footer
+        &__social
+            top: 210px
+            transform: translateX(-50%)
+            left: 50%
+        &__apps
+            top: 250px
+            transform: translateX(50%)
+            right: 50%
+        &__underline
+            margin-top: 120px

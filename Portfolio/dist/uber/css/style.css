@@ -1,0 +1,189 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: relative;
+    padding-top: 50px;
+}
+
+header .header__nav {
+    height: 50px;
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav .header__menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+}
+
+.header__menu .header__menu-element {
+    list-style-type: none;
+}
+
+.header__menu .header__menu-element:not(:last-child) {
+    padding-right: 37px;
+    border-right: 1px dotted #000;
+}
+
+.header__menu .header__menu-element a {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+header .header__info {
+    min-height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 19px 0 19px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.header__info .header__logo img {
+    width: 100%;
+}
+
+.header__info .header__logo .header__logo-text {
+    opacity: 0.5;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.header__info .header__phone .header__phone-text {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.header__info .header__phone .header__phone-link {
+    color: #ffffff;
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right;
+    text-decoration: none;
+}
+
+.header__info .header__callUs,
+.promo .promo__button {
+    padding: 18px 20px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: none;
+}
+
+.promo {
+    background: url(../img/bg/main__bg.jpg) center center/cover no-repeat;
+    min-height: 800px;
+    padding-top: 151px;
+    padding-bottom: 135px;
+}
+
+.promo h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.promo .promo__header {
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo .promo__text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 23px;
+}
+
+.promo .promo__button {
+    margin: 0 auto;
+    display: block;
+    margin-top: 135px;
+    font-size: 18px;
+    padding: 20px 39px;
+}
+
+.benefits {
+    padding: 71px 0 65px 0;
+}
+
+.benefits .benefits__title {
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin: 0 auto;
+}
+
+.benefits .benefits__header {
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+
+.benefits .benefits__card {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits .benefits__card .benefits__card-img {
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits .benefits__card .benefits__card-info {
+    max-width: 341px;
+    padding-left: 26px;
+}
+
+.benefits .benefits__card .benefits__card-subtitle {
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.benefits .benefits__card .benefits__card-text {
+    font-weight: 300;
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+}
