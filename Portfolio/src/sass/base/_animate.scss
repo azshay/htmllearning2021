@@ -12,3 +12,21 @@
         transform: scale(1);
     }
 }
+
+@keyframes errorColor {
+    from {
+        color: black;
+    }
+
+    25% {
+        color: red;
+    }
+
+    75% {
+        color: red;
+    }
+
+    to {
+        color: black;
+    }
+}

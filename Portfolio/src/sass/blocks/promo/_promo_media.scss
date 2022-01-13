@@ -1,0 +1,40 @@
+@media (max-width: 1300px) {
+    .promo {
+        .side-panel {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        &__header {
+            max-width: 450px;
+            line-height: 39px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        &__btns {
+            margin-top: 32px;
+        }
+
+        &__menu {
+            width: 250px;
+
+            ul {
+                padding-left: 0;
+            }
+
+            li {
+                margin-left: 55px;
+            }
+        }
+
+        &__hamburger {
+            right: 25px;
+        }
+    }
+}

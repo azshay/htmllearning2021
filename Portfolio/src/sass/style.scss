@@ -14,6 +14,13 @@
     padding-right: calc(50% - 570px);
 }
 
+@media (max-width: 1150px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 .divider {
     width: 60px;
     height: 3px;
@@ -22,12 +29,18 @@
     margin: 0 auto;
 }
 
-@import 'blocks/title';
+@import 'blocks/title/title';
+@import 'blocks/title/title_media';
 @import 'blocks/btns';
-@import 'blocks/promo';
+@import 'blocks/promo/promo';
+@import 'blocks/promo/promo_media';
 @import 'blocks/side-panel';
-@import 'blocks/about';
-@import 'blocks/experience';
-@import 'blocks/skills';
-@import 'blocks/works';
-@import "blocks/price";
+@import 'blocks/about/about';
+@import 'blocks/about/about_media';
+@import 'blocks/experience/experience';
+@import 'blocks/experience/experience_media';
+@import 'blocks/skills/skills';
+@import 'blocks/works/works';
+@import "blocks/price/price";
+@import 'blocks/contacts/contacts';
+@import 'blocks/privacy';

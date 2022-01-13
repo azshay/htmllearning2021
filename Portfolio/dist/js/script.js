@@ -26,3 +26,48 @@ const dashboard__readyLine = document.querySelectorAll('.skills__dashboard-ready
 dashboard__procent.forEach((item, i) => {
     dashboard__readyLine[i].style.width = item.innerHTML;
 });
+
+$(document).ready(function () {
+    $('#contacts__form__id').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            checkbox: {
+                required: true,
+            }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите свое имя",
+                minlength: jQuery.validator.format("Введите {0} символа!")
+            },
+            email: {
+                required: "Пожалуйста, введите свою почту",
+                email: "Неправильно введен адрес почты"
+            },
+            checkbox: {
+                required: ''
+            }
+        }
+    });
+});
+
+const checkbox = document.querySelector(".contacts__checkbox");
+
+document.querySelector(".contacts__submit .btn").addEventListener('click', function () {
+    if (checkbox.checked === false) {
+        checkbox.parentElement.classList.add("active");
+    }
+
+    setTimeout(removeActiveClass, 2000);
+});
+
+function removeActiveClass() {
+    checkbox.parentElement.classList.remove("active");
+}

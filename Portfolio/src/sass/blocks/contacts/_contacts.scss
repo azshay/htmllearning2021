@@ -1,0 +1,126 @@
+.contacts {
+    padding-bottom: 120px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+        padding: 0 35px 0 52px;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .divider {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 6px 0 0 0;
+    }
+
+    &__choice-text,
+    &__social,
+    &__feedback-text {
+        margin-top: 20px;
+    }
+
+    &__social {
+        height: 30px;
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    &__icon {
+        color: #000;
+        text-decoration: none;
+        margin-right: 25px;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__form {
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        column-gap: 25px;
+        row-gap: 29px;
+        margin-top: 30px;
+
+        label {
+            position: absolute;
+            top: -9px;
+            height: 18px;
+            display: block;
+            font-weight: 500;
+            font-size: 12px;
+            padding: 0 8px;
+            background: #fff;
+            margin-left: 12px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        grid-column: 1 / 3;
+
+        textarea {
+            resize: none;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__input {
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__submit {
+        grid-column: 1 / 3;
+        display: flex;
+        align-items: center;
+    }
+
+    &__policy {
+        margin-left: 35px;
+        font-size: 12px;
+        line-height: 18px;
+
+        span {
+            margin-left: 10px;
+        }
+
+        &.active {
+            animation: errorColor 2s linear 0s;
+        }
+
+        label {
+            display: none;
+        }
+    }
+}
+
+#contacts__name-error,
+#contacts__email-error {
+    top: 35px;
+    color: red;
+}

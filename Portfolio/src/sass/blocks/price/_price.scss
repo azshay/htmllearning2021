@@ -6,6 +6,7 @@
     }
 
     &__wrapper {
+        padding: 0 50px;
         display: grid;
         grid-template: minmax(44px, auto) / repeat(2, 366px);
         grid-auto-rows: minmax(44px, auto);
