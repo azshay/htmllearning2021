@@ -1,12 +1,19 @@
 .promo {
     position: relative;
     min-height: 100vh;
-    background: #BFE8FC;
     padding: 206px 0 362px 0;
+    background: url("../img/promo/macbook.jpg") center center/cover no-repeat;
 
     &__header {
         margin-top: 9px;
         max-width: 535px;
+    }
+
+    .title,
+    .btn,
+    .side-panel__text,
+    .side-panel__icon {
+        color: #ffffff;
     }
 
     &__btns {
@@ -30,7 +37,7 @@
             display: block;
             width: 30px;
             height: 3px;
-            background-color: #000;
+            background-color: #fff;
 
             &.promo__hamburger_long {
                 margin-top: 6px;

@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    .works {
+        &__wrapper {
+            grid-template: 280px / repeat(auto-fit, 280px);
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .works {
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+}

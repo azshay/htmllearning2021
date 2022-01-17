@@ -10,7 +10,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .experience {
         &__wrapper {
             grid-template-columns: 350px 350px;
@@ -20,11 +20,19 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .experience {
+        padding-bottom: 40px;
+
         &__wrapper {
             grid-template-columns: calc(100% - 20px);
             row-gap: 40px;
         }
+    }
+}
+
+@media (max-width: 575px) {
+    .experience {
+        padding-bottom: 40px;
     }
 }

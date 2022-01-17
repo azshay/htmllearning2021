@@ -1,0 +1,30 @@
+@media (max-width: 991px) {
+    .price {
+        &__wrapper {
+            padding: 0;
+            justify-content: space-around;
+            grid-template: minmax(44px, auto)/repeat(2, 350px);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .price {
+        padding-bottom: 40px;
+
+        &__wrapper {
+            grid-template: minmax(44px, auto)/repeat(auto-fit, 340px);
+            justify-content: center;
+            margin-top: 20px;
+            column-gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .price {
+        &__wrapper {
+            grid-template: minmax(44px, auto)/repeat(auto-fit, 300px);
+        }
+    }
+}

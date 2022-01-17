@@ -6,7 +6,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .promo {
         &__header {
             max-width: 450px;
@@ -15,7 +15,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .promo {
         &__btns {
             margin-top: 32px;
@@ -23,6 +23,7 @@
 
         &__menu {
             width: 250px;
+            padding-top: 70px;
 
             ul {
                 padding-left: 0;
@@ -31,6 +32,10 @@
             li {
                 margin-left: 55px;
             }
+        }
+
+        &__links {
+            bottom: 140px;
         }
 
         &__hamburger {
