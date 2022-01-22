@@ -1,0 +1,30 @@
+@media (max-width: 1200px) {
+    .job {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        &__item {
+            margin: 20px 10px;
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+    .job {
+        &__item {
+            max-width: 300px;
+        }
+
+        &__img {
+            width: 300px;
+            height: auto;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}

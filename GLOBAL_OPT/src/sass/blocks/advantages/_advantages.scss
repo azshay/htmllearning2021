@@ -6,6 +6,7 @@
         margin-top: 31px;
         display: grid;
         grid-template: repeat(4, minmax(62px, auto)) / repeat(2, 488px);
+        grid-auto-rows: minmax(62px, auto);
         justify-content: space-between;
         align-items: center;
         row-gap: 34px;

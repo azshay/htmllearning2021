@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+    .footer {
+        &__logo {
+            flex-direction: column;
+        }
+
+        &__img {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        &__name {
+            display: none;
+        }
+
+        &__wrapper {
+            margin-top: 10px;
+            flex-direction: column;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        .header__btn {
+            margin: 15px 0;
+        }
+    }
+}

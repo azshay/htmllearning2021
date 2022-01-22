@@ -1,5 +1,32 @@
 'use strict';
 
+function initMap() {
+    let opt = {
+        center: {
+            lat: 55.748381770092365,
+            lng: 37.62722999867739
+        },
+        zoom: 16
+    };
+
+    let map = new google.maps.Map(document.getElementById("map"), opt);
+
+    let image = 'icons/map-icon.png';
+    let marker = new google.maps.Marker({
+        position: opt.center,
+        map: map,
+        icon: image
+    });
+}
+
+const headerNav = document.querySelector('.header__nav');
+const headerBurger = document.querySelector('.header__burger');
+
+headerBurger.addEventListener('click', () => {
+    headerNav.classList.toggle('active');
+    headerBurger.classList.toggle('active');
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     const reviewsItems = document.querySelectorAll('.reviews__item');
 
@@ -15,32 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
                 item.classList.add('active');
             }
         });
-    });
-
-    function initMap() {
-        var opt = {
-            center: {
-                lat: 55.748381770092365,
-                lng: 37.62722999867739
-            },
-            zoom: 16
-        };
-
-        var map = new google.maps.Map(document.getElementById("map"), opt);
-
-        let image = 'icons/map-icon.png';
-        let marker = new google.maps.Marker({
-            position: opt.center,
-            map: map,
-            icon: image
-        });
-    }
-
-    const headerNav = document.querySelector('.header__nav');
-    const headerBurger = document.querySelector('.header__burger');
-
-    headerBurger.addEventListener('click', () => {
-        headerNav.classList.toggle('active');
-        headerBurger.classList.toggle('active');
     });
 });

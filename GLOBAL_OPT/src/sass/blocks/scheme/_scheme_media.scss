@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+    .scheme {
+
+        &__top,
+        &__bottom {
+            grid-template: minmax(145px, auto)/repeat(2, 260px);
+            gap: 50px;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .scheme {
+
+        &__top,
+        &__bottom {
+            grid-template: minmax(145px, auto) / 260px;
+        }
+    }
+}

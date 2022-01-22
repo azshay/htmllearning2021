@@ -1,0 +1,12 @@
+@media (max-width: 991px) {
+    .reviews {
+        &__wrapper {
+            grid-template: repeat(2, minmax(240px, auto)) / 1fr;
+            justify-content: center;
+        }
+
+        &__item {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1200px) {
+    .price {
+        &__wrapper {
+            grid-template: minmax(355px, auto)/repeat(2, 265px);
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .price {
+        &__wrapper {
+            grid-template: minmax(355px, auto) / 265px;
+        }
+    }
+}

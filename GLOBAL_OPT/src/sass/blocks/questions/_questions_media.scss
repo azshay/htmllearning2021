@@ -1,0 +1,31 @@
+@media (max-width: 991px) {
+    .questions {
+        &__form {
+            grid-template: 45px 71px minmax(45px, auto)/repeat(3, 225px);
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .questions {
+        &__form {
+            padding: 18px 10px 25px 10px;
+            grid-template: 45px 71px minmax(45px, auto)/repeat(3, 175px);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .questions {
+        &__form {
+            grid-template: 45px 45px 45px 71px minmax(45px, auto) / 280px;
+
+            row-gap: 10px;
+        }
+
+        input {
+            grid-column: 1 / 4;
+        }
+    }
+}

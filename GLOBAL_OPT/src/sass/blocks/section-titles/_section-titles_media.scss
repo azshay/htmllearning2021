@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+    .section {
+        &__header {
+            font-size: 15px;
+        }
+
+        &__subheader {
+            font-size: 13px;
+            padding: 0 30px;
+        }
+    }
+}
