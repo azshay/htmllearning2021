@@ -1,0 +1,40 @@
+.agent {
+    min-height: 342px;
+    padding: 58px 0 75px 0;
+    background: url(../img/agent/background.jpg) center center/cover no-repeat;
+
+    &__img {
+        border: 1px solid #ffffff;
+        margin: 0 auto;
+        width: 102px;
+        height: 102px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+
+        img {
+            width: 48px;
+            height: 51px;
+            object-fit: cover;
+        }
+    }
+
+    &__header {
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__descr {
+        color: #ffffff;
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 27px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}

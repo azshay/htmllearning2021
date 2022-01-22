@@ -1,0 +1,51 @@
+@import 'base/mixins';
+@import 'base/variables';
+@import 'libs/bootstrap-reboot';
+@import 'libs/slick.scss';
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+@media (max-width: 1150px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@import 'blocks/header/header';
+@import 'blocks/header/header_media';
+@import 'blocks/promo/promo';
+@import 'blocks/promo/promo_media';
+@import 'blocks/btn/btn';
+@import 'blocks/advantages/advantages';
+@import 'blocks/advantages/advantages_media';
+@import 'blocks/section-titles/section-titles';
+@import 'blocks/section-titles/section-titles_media';
+@import 'blocks/job/job';
+@import 'blocks/job/job_media';
+@import 'blocks/agent/agent';
+@import 'blocks/agent/agent_media';
+@import 'blocks/price/_price';
+@import 'blocks/price/_price_media';
+@import 'blocks/call/call';
+@import 'blocks/call/call_media';
+@import 'blocks/managers/managers';
+@import 'blocks/managers/managers_media';
+@import 'blocks/scheme/scheme';
+@import 'blocks/scheme/scheme_media';
+@import 'blocks/reviews/reviews';
+@import 'blocks/reviews/reviews_media';
+@import 'blocks/questions/questions';
+@import 'blocks/questions/questions_media';
+@import 'blocks/map/map';
+@import 'blocks/footer/footer';
+@import 'blocks/footer/footer_media';

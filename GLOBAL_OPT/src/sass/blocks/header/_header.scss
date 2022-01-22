@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        max-width: 96px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__nav {
+        // margin-left: 55px;
+
+        ul {
+            display: flex;
+            margin-bottom: 0;
+            list-style-type: none;
+
+            li {
+                &:not(:first-child) {
+                    padding-left: 12px;
+                    border-left: 1px dotted rgba(255, 255, 255, 0.4);
+                }
+
+                &:not(:last-child) {
+                    padding-right: 12px;
+                }
+            }
+        }
+    }
+
+    &__burger {
+        width: 30px;
+        height: 2px;
+        background: $main-color;
+        position: relative;
+        margin-top: 10px;
+
+        display: none;
+
+        &:before {
+            content: '';
+            transition: all 0.5s;
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background: $main-color;
+            bottom: 5px;
+        }
+
+        &:after {
+            content: '';
+            transition: all 0.5s;
+            position: absolute;
+            width: 30px;
+            height: 2px;
+            background: $main-color;
+            bottom: 10px;
+        }
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        padding: 4px 0px;
+        font-size: 15px;
+        font-weight: 400;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $main-color;
+            border-bottom: 1px solid $main-color;
+        }
+    }
+
+    &__questions {
+        // margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: #fff;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__phone {
+        font-size: 19px;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}

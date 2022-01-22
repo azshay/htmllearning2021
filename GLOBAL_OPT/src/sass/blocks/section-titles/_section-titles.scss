@@ -1,0 +1,29 @@
+.section {
+    &__header {
+        color: #2e2e2e;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 23px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__subheader {
+        color: #2e2e2e;
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 880px;
+        margin-top: 17px;
+    }
+
+    &__divider {
+        width: 148px;
+        height: 1px;
+        background-color: $main-color;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
