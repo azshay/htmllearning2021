@@ -22,6 +22,22 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal__overlay">
+            <div class="modal__wrapper">
+                <div class="modal__close-wrapper">
+                    <div class="modal__close"></div>
+                </div>
+                <div class="modal__header">Заполните заявку и мы перезвоним</div>
+                <form class="modal__form">
+                    <input name="name" placeholder="Ваше имя" class="modal__input">
+                    <input name="phone" placeholder="Номер телефона" class="modal__input">
+                    <button class="btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <section class="promo">
         <div class="container">
             <div class="header">
@@ -278,50 +294,107 @@
             <div class="price__wrapper">
                 <div class="price__item">
                     <div class="price__name">Доставка морем</div>
-                    <div class="price__icon">
-                        <img src="icons/price/sea.png" alt="Sea">
+                    <div class="promo__item-content">
+                        <div class="price__icon">
+                            <img src="icons/price/sea.png" alt="Sea">
+                        </div>
+                        <div class="price__time">Доставка 35-50 дней</div>
+                        <div class="price__weight">от 0,3$ за 1 кг</div>
+                        <div class="price__text">Морские перевозки грузов из Китая в Россию за 35 дней
+                            с прохождением таможни </div>
+                        <button class="price__btn btn">Подробнее</button>
                     </div>
-                    <div class="price__time">Доставка 35-50 дней</div>
-                    <div class="price__weight">от 0,3$ за 1 кг</div>
-                    <div class="price__text">Морские перевозки грузов из Китая в Россию за 35 дней
-                        с прохождением таможни </div>
-                    <button class="price__btn btn">Подробнее</button>
+
+                    <div class="price__about">
+                        <div class="price__about-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nemo quod sunt perferendis
+                            dolor molestiae fuga officiis recusandae aperiam ipsum quasi enim! Beatae voluptates fuga,
+                            blanditiis veritatis, dolore sapiente quod harum impedit error sint excepturi facilis sunt
+                            facere odio est quos quisquam minima quae. Maiores pariatur amet commodi enim voluptatum!
+                        </div>
+
+                        <a class="price__about-prev">
+                            Назад
+                        </a>
+                    </div>
                 </div>
 
                 <div class="price__item">
                     <div class="price__name">Ж/Д доставка</div>
-                    <div class="price__icon">
-                        <img src="icons/price/train.png" alt="Train">
+                    <div class="price__item-content">
+                        <div class="price__icon">
+                            <img src="icons/price/train.png" alt="Train">
+                        </div>
+                        <div class="price__time">Доставка 15-28 дней</div>
+                        <div class="price__weight">от 1$ за 1 кг</div>
+                        <div class="price__text">ЖД перевозки грузов из Китая в Россию от 2 недель
+                            с прохождением таможни</div>
+                        <button class="price__btn btn">Подробнее</button>
                     </div>
-                    <div class="price__time">Доставка 15-28 дней</div>
-                    <div class="price__weight">от 1$ за 1 кг</div>
-                    <div class="price__text">ЖД перевозки грузов из Китая в Россию от 2 недель
-                        с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <div class="price__about">
+                        <div class="price__about-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nemo quod sunt perferendis
+                            dolor molestiae fuga officiis recusandae aperiam ipsum quasi enim! Beatae voluptates fuga,
+                            blanditiis veritatis, dolore sapiente quod harum impedit error sint excepturi facilis sunt
+                            facere odio est quos quisquam minima quae. Maiores pariatur amet commodi enim voluptatum!
+                        </div>
+
+                        <a class="price__about-prev">
+                            Назад
+                        </a>
+                    </div>
                 </div>
 
                 <div class="price__item">
                     <div class="price__name">Автодоставка</div>
-                    <div class="price__icon">
-                        <img src="icons/price/car.png" alt="Car">
+                    <div class="price__item-content">
+                        <div class="price__icon">
+                            <img src="icons/price/car.png" alt="Car">
+                        </div>
+                        <div class="price__time">Доставка 12-20 дня</div>
+                        <div class="price__weight">от 1$ за 1 кг</div>
+                        <div class="price__text">Автоперевозки грузов из Китая в Россию от 2 недель
+                            с прохождением таможни</div>
+                        <button class="price__btn btn">Подробнее</button>
                     </div>
-                    <div class="price__time">Доставка 12-20 дня</div>
-                    <div class="price__weight">от 1$ за 1 кг</div>
-                    <div class="price__text">Автоперевозки грузов из Китая в Россию от 2 недель
-                        с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <div class="price__about">
+                        <div class="price__about-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nemo quod sunt perferendis
+                            dolor molestiae fuga officiis recusandae aperiam ipsum quasi enim! Beatae voluptates fuga,
+                            blanditiis veritatis, dolore sapiente quod harum impedit error sint excepturi facilis sunt
+                            facere odio est quos quisquam minima quae. Maiores pariatur amet commodi enim voluptatum!
+                        </div>
+
+                        <a class="price__about-prev">
+                            Назад
+                        </a>
+                    </div>
                 </div>
 
                 <div class="price__item">
                     <div class="price__name">Авиа доставка</div>
-                    <div class="price__icon">
-                        <img src="icons/price/airplane.png" alt="Airplane">
+                    <div class="price__item-content">
+                        <div class="price__icon">
+                            <img src="icons/price/airplane.png" alt="Airplane">
+                        </div>
+                        <div class="price__time">Доставка 1-12 дней</div>
+                        <div class="price__weight">от 6$ за 1 кг</div>
+                        <div class="price__text">Авиаперевозки грузов из Китая в Россию до 2 недель
+                            с прохождением таможни</div>
+                        <button class="price__btn btn">Подробнее</button>
                     </div>
-                    <div class="price__time">Доставка 1-12 дней</div>
-                    <div class="price__weight">от 6$ за 1 кг</div>
-                    <div class="price__text">Авиаперевозки грузов из Китая в Россию до 2 недель
-                        с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <div class="price__about">
+                        <div class="price__about-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, nemo quod sunt perferendis
+                            dolor molestiae fuga officiis recusandae aperiam ipsum quasi enim! Beatae voluptates fuga,
+                            blanditiis veritatis, dolore sapiente quod harum impedit error sint excepturi facilis sunt
+                            facere odio est quos quisquam minima quae. Maiores pariatur amet commodi enim voluptatum!
+                        </div>
+
+                        <a class="price__about-prev">
+                            Назад
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

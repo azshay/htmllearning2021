@@ -1,0 +1,14 @@
+@media (max-width: 575px) {
+    .modal {
+        &__wrapper {
+            background: rgb(141, 141, 141);
+            width: 300px;
+            padding: 20px 0;
+        }
+
+        &__close-wrapper {
+            right: 10px;
+            top: 10px;
+        }
+    }
+}

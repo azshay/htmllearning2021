@@ -43,4 +43,39 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+
+    const headerBtn = document.querySelector('.header .header__btn');
+    const footerBtn = document.querySelector('.footer .header__btn');
+    const modalWindow = document.querySelector('.modal');
+    const modalClose = document.querySelector('.modal__close-wrapper');
+    const promoBtn = document.querySelector('.promo__btn');
+    const bodyElement = document.querySelector('body');
+
+    function addModalWindow(needButton) {
+        needButton.addEventListener('click', () => {
+            modalWindow.classList.add('active');
+            bodyElement.style.overflow = "hidden";
+        });
+    }
+
+    addModalWindow(headerBtn);
+    addModalWindow(promoBtn);
+    addModalWindow(footerBtn);
+
+    modalClose.addEventListener('click', () => {
+        modalWindow.classList.remove('active');
+        bodyElement.style.overflow = "visible";
+    });
+
+    const priceBtn = document.querySelector('.price__btn');
+    const priceItem = document.querySelector('.price__item');
+    const pricePrevBtn = document.querySelector('.price__about-prev');
+
+    priceBtn.addEventListener('click', () => {
+        priceItem.classList.add('active');
+    });
+
+    pricePrevBtn.addEventListener('click', () => {
+        priceItem.classList.remove('active');
+    });
 });
