@@ -12,6 +12,12 @@
             max-width: 450px;
             line-height: 39px;
         }
+
+        &__hamburger {
+            span {
+                display: block;
+            }
+        }
     }
 }
 
